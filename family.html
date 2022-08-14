@@ -1,11 +1,43 @@
 <!--Jeff Birkner-->
 <!DOCTYPE html>
 <html lang="en-us">
+    <style>
+        .show {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .show .hide {
+          visibility: hidden;
+          width: 500px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 10px 0;
+          
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+          top: -5px;
+          left: 105%;
+        }
+        
+        .show:hover .hide {
+          visibility: visible;
+        }
+        .content-family li{
+            padding:10px;
+        }
+        
+        </style>
     <head>
         <title>My Family</title>
         <meta charset="UTF-8">
         <link rel="icon" type=image href="images/family-icon.png">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -35,27 +67,81 @@
             <img src="images/family.jpg">
             <h3>Left to Right:</h3>
             <ul>
-                <div class="show"><li>Daughter-in-law: Jaryn</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Son: Harrison</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Son: Jaden</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Wife: Angela</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Me: Jeff</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Son: Justin</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Daughter: Lydiann</li></div>
-                <div class="hide">Isn't she sweet</div>
-                <div class=show><li>Daughter: Rose</li></div>
-                <div class="hide">Isn't she sweet</div>
+                <br>
+                <br>
+                <p>Hover over each name to learn more</p>
+                <li>
+                    <div class="show">Daughter-in-law: Jaryn
+                        <span class="hide">Isn't she sweet</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Son: Harrison
+                        <span class="hide">What a stud</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Son: Jaden
+                        <span class="hide">What a stud</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Wife: Angela
+                        <span class="hide">A loving and devoted wife and mother of five. She has homeschooled our children and works as a Consultant Dietitian at our local hospital</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Me: Jeffrey
+                        <span class="hide">a magnificent specimen</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Son: Justin
+                        <span class="hide">What a stud</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Daughter: Lydiann
+                        <span class="hide">Isn't she sweet</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="show">Daughter: Rose
+                        <span class="hide">Isn't she sweet</span>
+                    </div>
+                </li>
             </ul>
         </div>
         <hr>
         <footer>
+            <div class="row">
+                <div class="column">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <table>
+                        <tr>
+                            <td><p><a href="employment.html" style="color:#020222; font-size:16px;">Contact Me</a></p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <table>
+                        <tr>
+                            <td><p>Copyright &#169 2022 Birkner</p></td>
+                        </tr>
+                    </table>
 
+                </div>
         </footer>
     </body>
 </html>

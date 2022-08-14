@@ -1,11 +1,40 @@
 <!--Jeff Birkner-->
 <!DOCTYPE html>
 <html lang="en-us">
+<style>
+    #colOne{
+		width: 50%;
+		float:left;
+        margin: 15px;
+	}
+	#colTwo{
+		width: 680px;
+		display:flex;
+    	flex-direction: column;
+        margin: 15px;
+		}
+    #colTwo h2{
+        padding-left: 20px;
+    }
+    h2, h3, td{
+        color:#f8f8ff;
+    }
+
+    #resume{
+        margin-top: 20px;
+        margin-right: 70px;
+    }
+    td{
+        font-size: 16px;
+    }
+</style>
     <head>
         <title>Employment</title>
         <meta charset="UTF-8">
         <link rel="icon" type=image href="images/jobs.png">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -23,11 +52,109 @@
         </nav>
         <hr>
         <div class="content">
-            
+            <div class="content">
+                <aside id="colOne">
+                    <h2>My Contact Information</h2>
+                    <table>
+                        <thead>
+                        <tbody>
+                            <tr><td>Phone Number:</td></tr>
+                            <tr><td>(###) ###-####</td></tr>
+                            <tr><td></td></tr>
+                            <tr><td>Jeff Birkner</td></tr>
+                            <tr><td>Street Address</td></tr>
+                            <tr><td>City, State Zipcode</td></tr>
+                            <tr><td></td></tr>
+                        </tbody>
+                    </table>
+                </aside>
+                <div id="resume">
+                    <h2>Resume</h2>
+                    <iframe src="images/Resume.pdf#toolbar=0" width="600px" height="400px">
+                    </iframe>
+                </div>
+                <section id="colTwo">
+                    <h2>Request References/Contact Me</h2>
+                    <form id="contact" name="Contact" method="post" 
+                    action="https://www.w3schools.com/action_page.php" target="_blank">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <div class="radio">
+                        <label for="suffix">Suffix:</label>
+                            <div class="row">
+                                <div class="input">
+                                    <label for="mr">Mr.</label>
+                                    <input type="radio" name="mr" id="mr">
+                                </div>
+                                <div>
+                                    <label for="ms">Ms.</label>
+                                    <input type="radio" name="ms" id="ms">
+                                </div>
+                                <div class="input">
+                                    <label for="mrs">Mrs.</label>
+                                    <input type="radio" name="mrs" id="mrs">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="align">
+                            <label for="first-name">First Name: </label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="align">
+                            <label for="last-name">Last Name: </label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="align">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="align">
+                            <label for="phone">Phone: </label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="align">
+                            <label for="contact">Preferred Contact:</label>
+                            <select name="contact">
+                                <option value="1" selected disabled>Please Select</option>
+                                <option value="2">Phone</option>
+                                <option value="3">Text</option>
+                                <option value="4">Email</option>
+                            </select>
+                        </div>
+                        <div class="align">
+                            <label for="message">Message</label>
+                            <textarea id="note" name="note" row="2" cols="50">Enter your message here</textarea>
+                        </div>
+                        <div class="row" style="padding:5px;">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </fieldset>
+            </section>
+            </div><!--end container-->
         </div>
         <hr>
         <footer>
+            <div class="row">
+                <div class="column">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <table>
+                        <tr>
+                            <td><p>Copyright &#169 2022 Birkner</p></td>
+                        </tr>
+                    </table>
 
+                </div>
         </footer>
     </body>
 </html>
